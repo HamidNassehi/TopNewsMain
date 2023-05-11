@@ -1,0 +1,34 @@
+body {
+    background-image: url('/stylesheet/news.jpg');
+    background-size: cover;
+    font-family: "Sofia";
+} 
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+}
+h3 {
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+}
+
+a.hover {
+    color:red;
+}
+
+a {
+    color: white;
+}
+
+h5 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
