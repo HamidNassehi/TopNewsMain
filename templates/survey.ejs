@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Survey</title>
+    <link href="/stylesheet/style2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>News Survey</h1>
+    <form action="/survey" method="POST">
+        <h1>
+        <fieldset>
+            <h2>
+            <label><b>Name: </b><input type="text" name="name" id="name" placeholder="Enter name" /></label>
+            <label><b>Age: </b><input type="number" name="number" id="number" placeholder="Enter age"/></label>
+            <br />
+            <label for="Rate">Rate the given top news:</label>
+            
+            <select name="Rate" id="Rate">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br />
+            <br />
+            <label><b>What stood out to you about the articles? </b>
+                <br>
+                <textarea id="info" name="info" rows="6" cols="80" placeholder="Anything interesting about the articles?"></textarea></label>
+                </h2>
+        </h1>
+        <input id="reset" type="reset" value="Reset" class="block" />
+        <input id="submit" type="submit" value="Submit Application" class="block" />
+        </form>
+            <div class="reset">
+                <a href="/">HOME</a>
+            </div>
+    </fieldset>
+    <script>
+        window.onsubmit = ProceedHome;
+        function ProceedHome() {
+            var result = confirm(
+                "Are you sure you want to submit your survey?\nYou will not be able to change your information once submitted.");
+            if (result) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

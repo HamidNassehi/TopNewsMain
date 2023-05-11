@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="/stylesheet/style3.css" rel="stylesheet" type="text/css">
+    <title>News 1</title>
+</head>
+
+<body>
+    <div class="heading">
+    <h1><b>Top News</b></h1>
+    </div>
+    <hr>
+    <% articles.forEach(function(findNews, index) { %>
+            <div class="heading">
+                <b><%- findNews.title %></b>
+            </div>
+            <div class="author">
+            <% if (findNews.author) { %>
+                Authors: <%- findNews.author %><br>
+                <% } %>
+            </div>
+    <div class="image-container">
+            <img src="<%= findNews.urlToImage %>" alt="Article image" title="<%= findNews.content %>" width="500px" >
+            </div>
+            <div class="content">
+              <p><%- findNews.description %></p>
+            <p>
+                For more information on this article: Visit - <br>
+                <a href="<%- findNews.url %>">
+                    <%- findNews.url %>
+                </a>
+                <div class = "author">
+                        <% if (findNews.publishedAt) { %>
+                            Published on: <%- findNews.publishedAt %><br>
+                        <% } %>
+                </div>
+                <hr>
+            </div>
+            </p>
+    <% }) %>
+       
+        <div class="reset">
+            <br>
+            <a href="/">HOME</a> &nbsp&nbsp
+            <a href="/survey">SURVEY</a>
+
+        </div>
+        <h2>
+        <a href="/survey">SURVEY</a>
+</h2>
+</body>

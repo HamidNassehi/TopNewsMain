@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Data</title>
+    <link href="/stylesheet/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Survey Retrieve</h1>
+    <h5>
+    <b>Name -- </b>
+    <%- name %>
+        <br>
+        <b>Age -- </b>
+        <%- number %>
+            <br>
+            <b>Rating -- </b>
+            <%- Rate %>
+                <br>
+                <b>Background Information -- </b> </br>
+                <%- info %>
+                    <hr>
+                    <b>
+                        <div id="date"></div>
+                        <script>
+
+                            document.getElementById("date").insertAdjacentHTML('afterend', '<div id="date_given">' + Date() + '</div>');
+                            document.getElementById("date").style.float = "left";
+                        </script>
+                        <hr>
+                            <div class="reset">
+                                <a href="/">HOME</a>
+                            </div>
+        </h5>
+</body>
+
+</html>
