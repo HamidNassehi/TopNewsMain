@@ -1,0 +1,64 @@
+body {
+    background-image: url('/stylesheet/news.jpg');
+    background-size: cover;
+    font-family: "Sofia";
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+}
+
+label {
+    cursor: default;
+    color: white;
+    text-align: center;
+}
+
+.block {
+    text-align: center;
+    width: 50%;
+    float: right;
+    font-size: 100%;
+    margin-top: 50;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.reset {
+    text-align: center;
+    font-size: 150%;
+    position: absolute;
+    top: 0;
+    bottom: 20;
+    left: 20;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+a {
+    color: white;
+}

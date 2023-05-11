@@ -1,0 +1,47 @@
+  body {
+      border-top: 10px solid lightblue;
+      border-bottom: 10px solid lightblue;
+      border-left: 10px solid orange;
+      border-right: 10px solid orange;
+      padding: 20px;
+    background-color: lightgrey;
+  }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 20px;
+}
+
+.reset {
+    text-align: center;
+    font-size: 120%;
+    position: absolute;
+    top: 0;
+    bottom: 20;
+    left: 20;
+}
+
+.content {
+    text-align: center;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+}
+
+.author {
+    text-align: center;
+    font-size: 14px;
+}
+
+img {
+     border: 2px solid orange;
+ }
